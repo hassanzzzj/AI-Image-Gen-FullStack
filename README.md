@@ -41,41 +41,27 @@
 ├── .dockerignore       # Build optimization filters
 ├── .gitignore          # Version Control security
 └── README.md           # Project documentation
-⚡ Quick Start Guide
-Method 1: Using Docker (Recommended)
-Deploy the entire stack with zero local configuration:
+```
+## ⚡ Quick Start Guide
 
+You can get **Hassan's AI** up and running in less than 2 minutes using either Docker or a local Python setup.
 
+### **Option A: The Docker Way (Recommended)**
+Deploy the entire environment without manually installing any dependencies.
+
+> [!TIP]
+> This is the most stable way to run the application across different Operating Systems.
+
+```bash
+# Build and launch the container
 docker-compose up --build
-Note: Access the application at http://localhost:8501.
-
-Method 2: Local Setup
-Ideal for developers looking to modify the source code:
-
-
-# Clone the repository
+📍 Access Point: http://localhost:8501Option B: Manual Local SetupBest for developers who want to tweak the source code.Bash# 1. Clone the repository
 git clone [https://github.com/hassanzzzj/AI-Image-Gen-FullStack.git](https://github.com/hassanzzzj/AI-Image-Gen-FullStack.git)
 cd AI-Image-Gen-FullStack
 
-# Install dependencies
+# 2. Install required libraries
 pip install -r requirements.txt
 
-# Launch the app
+# 3. Fire up the application
 streamlit run app.py
-🕹️ Features & Usage
-High-Speed Inference: Powered by high-end GPU clusters via Pollinations AI.
-
-Infinite Creativity: No daily limits or credit depletion errors.
-
-Responsive Design: Optimized using width='stretch' for perfect scaling on mobile and desktop.
-
-Instant Export: Built-in "Download" button to save your generated artwork in PNG format.
-
-🛡️ Best Practices & Security
-Token-Free Architecture: This version requires no API keys, making it safe for public deployment.
-
-Optimized Builds: The .dockerignore file ensures that the Docker image stays lightweight (under 300MB).
-
-Up-to-Date Standards: Fully compliant with the latest 2026 Streamlit UI/UX deprecation standards.
-
-<p align="center"> <b>Developed with ❤️ for the AI Community | © 2026 Hassan AI Project</b> </p>
+🕹️ Features & WorkflowFeatureDescription🚀 High-Speed InferencePowered by high-end distributed GPU clusters via Pollinations AI.🎨 Infinite CreativityNo daily limits, no credit depletion, and no hidden costs.📱 Responsive DesignOptimized with width='stretch' for perfect mobile/desktop scaling.📥 Instant ExportOne-click "Download" button to save artwork in high-quality PNG.🛡️ Best Practices & Security🔒 Token-Free Architecture: This version requires zero API keys, eliminating the risk of accidental credential leaks on public repositories.📦 Optimized Build Logic: Uses a curated .dockerignore file to keep your final image lightweight (under 300MB).🛠️ Future-Proof Code: Fully compliant with the 2026 Streamlit UI/UX standards, ensuring no deprecation warnings.<div align="center">Developed with ❤️ for the AI Community | © 2026 Hassan's AI</div>
