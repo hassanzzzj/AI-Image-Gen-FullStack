@@ -14,7 +14,6 @@
     </style>
 </head>
 <body class="p-4 md:p-10">
-
     <div class="max-w-4xl mx-auto">
         <header class="text-center mb-12">
             <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 mb-4">
@@ -27,7 +26,6 @@
                 <span class="bg-purple-600/20 text-purple-400 px-3 py-1 rounded-full text-sm border border-purple-500/30">Free API</span>
             </div>
         </header>
-
         <section class="glass p-8 rounded-2xl mb-8">
             <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
                 <i class="fas fa-rocket text-blue-500"></i> Project Overview
@@ -36,7 +34,6 @@
                 This project is a high-performance web application designed to generate high-quality AI images from textual descriptions. By integrating <strong>Streamlit</strong> for the frontend and <strong>Pollinations AI</strong> for backend inference, it provides a seamless, zero-cost solution for creators and developers.
             </p>
         </section>
-
         <section class="mb-8">
             <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
                 <i class="fas fa-layer-group text-purple-500"></i> Tech Stack
@@ -70,8 +67,7 @@
                 </table>
             </div>
         </section>
-
-        <section class="glass p-8 rounded-2xl mb-8">
+   <section class="glass p-8 rounded-2xl mb-8">
             <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
                 <i class="fas fa-folder-open text-yellow-500"></i> Project Structure
             </h2>
@@ -82,19 +78,16 @@
 ├── docker-compose.yml  # Orchestration File
 └── .gitignore          # Version Control Filters</code></pre>
         </section>
-
         <section class="mb-8">
             <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
                 <i class="fas fa-terminal text-green-500"></i> Setup & Installation
-            </h2>
-            
+            </h2>          
             <div class="space-y-6">
                 <div>
                     <h3 class="text-lg font-semibold text-slate-200 mb-2">Method 1: Local Python Environment</h3>
                     <pre><code>pip install -r requirements.txt
 streamlit run app.py</code></pre>
                 </div>
-
                 <div>
                     <h3 class="text-lg font-semibold text-slate-200 mb-2">Method 2: Docker (Best for Production)</h3>
                     <pre><code>docker-compose up --build</code></pre>
@@ -102,7 +95,6 @@ streamlit run app.py</code></pre>
                 </div>
             </div>
         </section>
-
         <section class="grid md:grid-cols-2 gap-6 mb-12">
             <div class="p-6 border border-slate-700 rounded-xl hover:border-blue-500 transition-colors">
                 <i class="fas fa-bolt text-2xl text-blue-500 mb-3"></i>
@@ -115,7 +107,6 @@ streamlit run app.py</code></pre>
                 <p class="text-sm text-slate-400">Unlimited generations without any subscription or tokens.</p>
             </div>
         </section>
-
         <footer class="text-center border-t border-slate-800 pt-8 mt-12">
             <p class="text-slate-500">Developed with ❤️ and Streamlit</p>
             <p class="text-xs text-slate-600 mt-2 uppercase tracking-widest">© 2026 Professional AI Portfolio</p>
