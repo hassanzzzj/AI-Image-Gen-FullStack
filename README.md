@@ -70,8 +70,7 @@ streamlit run app.py
 <section class="py-12 bg-[#0f172a] text-white font-sans">
     <div class="max-w-5xl mx-auto px-6">
         <div class="flex items-center gap-3 mb-8">
-            <span class="text-3xl">🕹️</span>
-            <h2 class="text-3xl font-bold tracking-tight">Features & Workflow</h2>
+            <span class="text-3xl">🕹️</span><h2 class="text-3xl font-bold tracking-tight">Features & Workflow</h2>
         </div>
         <div class="hidden md:block overflow-hidden rounded-xl border border-slate-700 bg-slate-900/50 backdrop-blur-md">
             <table class="w-full text-left border-collapse">
