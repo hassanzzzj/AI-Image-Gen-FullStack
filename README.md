@@ -64,4 +64,70 @@ pip install -r requirements.txt
 
 # 3. Fire up the application
 streamlit run app.py
-🕹️ Features & WorkflowFeatureDescription🚀 High-Speed InferencePowered by high-end distributed GPU clusters via Pollinations AI.🎨 Infinite CreativityNo daily limits, no credit depletion, and no hidden costs.📱 Responsive DesignOptimized with width='stretch' for perfect mobile/desktop scaling.📥 Instant ExportOne-click "Download" button to save artwork in high-quality PNG.🛡️ Best Practices & Security🔒 Token-Free Architecture: This version requires zero API keys, eliminating the risk of accidental credential leaks on public repositories.📦 Optimized Build Logic: Uses a curated .dockerignore file to keep your final image lightweight (under 300MB).🛠️ Future-Proof Code: Fully compliant with the 2026 Streamlit UI/UX standards, ensuring no deprecation warnings.<div align="center">Developed with ❤️ for the AI Community | © 2026 Hassan's AI</div>
+```
+
+## 🕹️ Features & Workflow
+<section class="py-12 bg-[#0f172a] text-white font-sans">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="flex items-center gap-3 mb-8">
+            <span class="text-3xl">🕹️</span>
+            <h2 class="text-3xl font-bold tracking-tight">Features & Workflow</h2>
+        </div>
+        <div class="hidden md:block overflow-hidden rounded-xl border border-slate-700 bg-slate-900/50 backdrop-blur-md">
+            <table class="w-full text-left border-collapse">
+                <thead class="bg-slate-800/80">
+                    <tr>
+                        <th class="p-5 text-blue-400 font-semibold uppercase tracking-wider text-sm">Feature</th>
+                        <th class="p-5 text-blue-400 font-semibold uppercase tracking-wider text-sm">Description</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-700">
+                    <tr class="hover:bg-slate-800/40 transition-colors">
+                        <td class="p-5 font-bold flex items-center gap-2">
+                            <span>🚀</span> High-Speed Inference
+                        </td>
+                        <td class="p-5 text-slate-300">Powered by high-end distributed GPU clusters via Pollinations AI.</td>
+                    </tr>
+                    <tr class="hover:bg-slate-800/40 transition-colors">
+                        <td class="p-5 font-bold flex items-center gap-2">
+                            <span>🎨</span> Infinite Creativity
+                        </td>
+                        <td class="p-5 text-slate-300">No daily limits, no credit depletion, and no hidden costs.</td>
+                    </tr>
+                    <tr class="hover:bg-slate-800/40 transition-colors">
+                        <td class="p-5 font-bold flex items-center gap-2">
+                            <span>📱</span> Responsive Design
+                        </td>
+                        <td class="p-5 text-slate-300">Optimized with <code class="bg-slate-800 px-1 rounded text-pink-400 text-xs">width='stretch'</code> for perfect mobile/desktop scaling.</td>
+                    </tr>
+                    <tr class="hover:bg-slate-800/40 transition-colors">
+                        <td class="p-5 font-bold flex items-center gap-2">
+                            <span>📥</span> Instant Export
+                        </td>
+                        <td class="p-5 text-slate-300">One-click "Download" button to save artwork in high-quality PNG.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="md:hidden space-y-4">
+            <div class="p-4 bg-slate-900 border border-slate-700 rounded-lg">
+                <div class="font-bold text-blue-400 mb-1">🚀 High-Speed Inference</div>
+                <div class="text-sm text-slate-400">Powered by high-end distributed GPU clusters via Pollinations AI.</div>
+            </div>
+            <div class="p-4 bg-slate-900 border border-slate-700 rounded-lg">
+                <div class="font-bold text-blue-400 mb-1">🎨 Infinite Creativity</div>
+                <div class="text-sm text-slate-400">No daily limits, no credit depletion, and no hidden costs.</div>
+            </div>
+            <div class="p-4 bg-slate-900 border border-slate-700 rounded-lg">
+                <div class="font-bold text-blue-400 mb-1">📱 Responsive Design</div>
+                <div class="text-sm text-slate-400">Optimized with width='stretch' for mobile/desktop.</div>
+            </div>
+            <div class="p-4 bg-slate-900 border border-slate-700 rounded-lg">
+                <div class="font-bold text-blue-400 mb-1">📥 Instant Export</div>
+                <div class="text-sm text-slate-400">One-click "Download" button for high-quality PNG.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div align="center">Developed with ❤️ for the AI Community | © 2026 Hassan's AI </div>
