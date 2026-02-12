@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import random
 from io import BytesIO
 
 # Page Configuration
@@ -16,6 +17,17 @@ width = 1024
 height = 1024
 seed = 42 # Random seed for variety
 
+def generate_image(prompt):
+    # High quality keywords add karna
+    enhanced_prompt = f"{prompt}, 8k, highly detailed, professional photography, cinematic lighting, masterpiece"
+    
+    # Random seed taake har baar naya result aaye
+    seed = random.randint(0, 999999)
+    
+    # Pollinations AI URL with Flux model and 1024x1024 resolution
+    image_url = f"https://pollinations.ai/p/{enhanced_prompt.replace(' ', '%20')}?width=1024&height=1024&seed={seed}&model=flux"
+    
+    return image_url
 if st.button("Generate Image ✨"):
     if not prompt:
         st.warning("Enter Prompt First!")
@@ -24,11 +36,9 @@ if st.button("Generate Image ✨"):
             try:
                 # Pollinations AI ki simple URL structure
                 # Format: https://image.pollinations.ai/prompt/{prompt}?width={w}&height={h}&seed={s}
-                encoded_prompt = prompt.replace(" ", "%20")
-                image_url = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width={width}&height={height}&seed={seed}&nologo=true"
                 
                 # Image fetch karna
-                response = requests.get(image_url)
+                response = requests.get(generate_image(prompt))
                 
                 if response.status_code == 200:
                     # Image display karna
