@@ -1,117 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Image Generator - Project Documentation</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body { background-color: #0f172a; color: #e2e8f0; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
-        code { background-color: #1e293b; color: #38bdf8; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', Courier, monospace; }
-        pre { background-color: #000; padding: 15px; border-radius: 8px; overflow-x: auto; border: 1px solid #334155; }
-    </style>
-</head>
-<body class="p-4 md:p-10">
-    <div class="max-w-4xl mx-auto">
-        <header class="text-center mb-12">
-            <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 mb-4">
-                🎨 AI Image Generator
-            </h1>
-            <p class="text-xl text-slate-400">A Professional Streamlit & Dockerized Image Synthesis Tool</p>
-            <div class="flex justify-center gap-4 mt-6">
-                <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-sm border border-blue-500/30">Python 3.9+</span>
-                <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-sm border border-green-500/30">Docker Ready</span>
-                <span class="bg-purple-600/20 text-purple-400 px-3 py-1 rounded-full text-sm border border-purple-500/30">Free API</span>
-            </div>
-        </header>
-        <section class="glass p-8 rounded-2xl mb-8">
-            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
-                <i class="fas fa-rocket text-blue-500"></i> Project Overview
-            </h2>
-            <p class="text-slate-300 leading-relaxed">
-                This project is a high-performance web application designed to generate high-quality AI images from textual descriptions. By integrating <strong>Streamlit</strong> for the frontend and <strong>Pollinations AI</strong> for backend inference, it provides a seamless, zero-cost solution for creators and developers.
-            </p>
-        </section>
-        <section class="mb-8">
-            <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
-                <i class="fas fa-layer-group text-purple-500"></i> Tech Stack
-            </h2>
-            <div class="overflow-hidden rounded-xl border border-slate-700">
-                <table class="w-full text-left">
-                    <thead class="bg-slate-800 text-slate-200">
-                        <tr>
-                            <th class="p-4">Technology</th>
-                            <th class="p-4">Purpose</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-700 bg-slate-900/50">
-                        <tr>
-                            <td class="p-4 font-semibold text-blue-400">Streamlit</td>
-                            <td class="p-4">Interactive UI & Reactive State Management</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-semibold text-blue-400">Docker</td>
-                            <td class="p-4">Containerization & Environment Consistency</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-semibold text-blue-400">Pollinations AI</td>
-                            <td class="p-4">Stable Diffusion based Image Generation</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-semibold text-blue-400">Requests</td>
-                            <td class="p-4">API Communication & Image Fetching</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-   <section class="glass p-8 rounded-2xl mb-8">
-            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
-                <i class="fas fa-folder-open text-yellow-500"></i> Project Structure
-            </h2>
-            <pre><code>.
-├── app.py              # Main Application Logic
-├── requirements.txt    # Python Dependencies
-├── Dockerfile          # Container Build Recipe
-├── docker-compose.yml  # Orchestration File
-└── .gitignore          # Version Control Filters</code></pre>
-        </section>
-        <section class="mb-8">
-            <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
-                <i class="fas fa-terminal text-green-500"></i> Setup & Installation
-            </h2>          
-            <div class="space-y-6">
-                <div>
-                    <h3 class="text-lg font-semibold text-slate-200 mb-2">Method 1: Local Python Environment</h3>
-                    <pre><code>pip install -r requirements.txt
-streamlit run app.py</code></pre>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-slate-200 mb-2">Method 2: Docker (Best for Production)</h3>
-                    <pre><code>docker-compose up --build</code></pre>
-                    <p class="mt-2 text-sm text-slate-400 italic">Navigate to http://localhost:8501 in your browser.</p>
-                </div>
-            </div>
-        </section>
-        <section class="grid md:grid-cols-2 gap-6 mb-12">
-            <div class="p-6 border border-slate-700 rounded-xl hover:border-blue-500 transition-colors">
-                <i class="fas fa-bolt text-2xl text-blue-500 mb-3"></i>
-                <h4 class="text-lg font-bold mb-2">Instant Generation</h4>
-                <p class="text-sm text-slate-400">No waiting in queues. Get your AI art in seconds.</p>
-            </div>
-            <div class="p-6 border border-slate-700 rounded-xl hover:border-green-500 transition-colors">
-                <i class="fas fa-dollar-sign text-2xl text-green-500 mb-3"></i>
-                <h4 class="text-lg font-bold mb-2">100% Free</h4>
-                <p class="text-sm text-slate-400">Unlimited generations without any subscription or tokens.</p>
-            </div>
-        </section>
-        <footer class="text-center border-t border-slate-800 pt-8 mt-12">
-            <p class="text-slate-500">Developed with ❤️ and Streamlit</p>
-            <p class="text-xs text-slate-600 mt-2 uppercase tracking-widest">© 2026 Professional AI Portfolio</p>
-        </footer>
-    </div>
+# 🎨 Hassan's AI: Ultra-Fast Image Generator
+> **Transforming Imagination into Reality with Zero Friction.**
 
-</body>
-</html>
+<div align="center">
+
+![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python Version](https://img.shields.io/badge/python-3.9%2B-brightgreen.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=Streamlit&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Live-success.svg)
+
+</div>
+
+---
+
+## 🚀 Project Overview
+
+**Hassan's AI** is a professional-grade, high-performance image generation platform. Built using **Streamlit** and powered by the **Pollinations AI API**, it offers an unlimited, cost-free solution for generating high-definition images from text prompts. No credits, no API tokens, and no complicated setups.
+
+---
+
+## 🛠️ Technical Stack
+
+| Component | Technology | Role |
+| :--- | :--- | :--- |
+| **Frontend UI** | Streamlit (v2026) | Reactive Dashboard & User Experience |
+| **AI Engine** | Pollinations AI | Stable Diffusion Generative Logic |
+| **API Layer** | Requests (REST) | Asynchronous Communication |
+| **Infrastructure** | Docker & Compose | Container Orchestration & Portability |
+
+---
+
+## 📂 Project Structure
+
+```text
+.
+├── app.py              # Application core logic & UI
+├── requirements.txt    # Python dependencies list
+├── Dockerfile          # Production-grade build recipe
+├── docker-compose.yml  # Multi-container orchestration
+├── .dockerignore       # Build optimization filters
+├── .gitignore          # Version Control security
+└── README.md           # Project documentation
+⚡ Quick Start Guide
+Method 1: Using Docker (Recommended)
+Deploy the entire stack with zero local configuration:
+
+
+docker-compose up --build
+Note: Access the application at http://localhost:8501.
+
+Method 2: Local Setup
+Ideal for developers looking to modify the source code:
+
+
+# Clone the repository
+git clone [https://github.com/hassanzzzj/AI-Image-Gen-FullStack.git](https://github.com/hassanzzzj/AI-Image-Gen-FullStack.git)
+cd AI-Image-Gen-FullStack
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch the app
+streamlit run app.py
+🕹️ Features & Usage
+High-Speed Inference: Powered by high-end GPU clusters via Pollinations AI.
+
+Infinite Creativity: No daily limits or credit depletion errors.
+
+Responsive Design: Optimized using width='stretch' for perfect scaling on mobile and desktop.
+
+Instant Export: Built-in "Download" button to save your generated artwork in PNG format.
+
+🛡️ Best Practices & Security
+Token-Free Architecture: This version requires no API keys, making it safe for public deployment.
+
+Optimized Builds: The .dockerignore file ensures that the Docker image stays lightweight (under 300MB).
+
+Up-to-Date Standards: Fully compliant with the latest 2026 Streamlit UI/UX deprecation standards.
+
+<p align="center"> <b>Developed with ❤️ for the AI Community | © 2026 Hassan AI Project</b> </p>
